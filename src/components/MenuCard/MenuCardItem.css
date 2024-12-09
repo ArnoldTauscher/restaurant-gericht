@@ -1,0 +1,142 @@
+.menu-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+.tab-container {
+  background-color: var(--color-white);
+  /*border-radius: 8px;*/
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-item {
+  flex: 1;
+}
+
+.tab-button {
+  width: 100%;
+  padding: 1rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid var(--color-golden);
+}
+
+.tab-content {
+  padding: 2rem;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-crimson);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.menu-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.menu-item-content {
+  padding: 1rem;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-black);
+}
+
+.menu-item-price {
+  font-weight: bold;
+  color: var(--color-gray);
+  margin: 0 0 0.5rem 0.3rem;
+}
+
+.menu-item-description {
+  font-size: 0.9rem;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1150px) {
+  .menu-container {
+    max-width: 560px;
+    width: 95%;
+  }
+
+  .menu-grid {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tab-list {
+    flex-direction: column;
+  }
+}

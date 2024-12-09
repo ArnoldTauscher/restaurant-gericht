@@ -1,0 +1,81 @@
+.reservation-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.reservation-info-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5.5rem;
+}
+
+.reservation-info-item-inner {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    justify-content: space-between;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-form-content {
+    margin-bottom: 1.5rem;
+}
+
+.reservation-form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.reservation-form-date-time-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.reservation-form-label {
+    width: 145px;
+}
+
+.reservation-form-time-label {
+    width: 100px;
+    margin-left: 3rem;
+}
+
+.reservation-form input {
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.reservation-form-guests-input {
+    width: 145px;
+}
+
+@media screen and (max-width: 850px) {
+    .reservation-info-item {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .reservation-info {
+        flex-direction: column;
+    }
+
+    .reservation-form-date-time-row {
+        flex-direction: column;
+    }
+
+    .reservation-form-time-label {
+        margin-left: 0;
+        margin-right: 2.8rem;
+    }
+}

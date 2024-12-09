@@ -1,0 +1,12 @@
+.book-table-content .reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.reservation input {
+    margin-bottom: 1rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
