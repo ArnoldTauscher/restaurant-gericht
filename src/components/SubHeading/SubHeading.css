@@ -1,0 +1,7 @@
+.sub-heading {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    line-height: 29.9px;
+    font-size: 23px;
+  }

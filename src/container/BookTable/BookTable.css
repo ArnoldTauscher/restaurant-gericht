@@ -1,0 +1,18 @@
+.book-table-button {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-family: var(--font-alt);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    margin: 0 1rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.book-table-button:hover,
+.book-table-button:focus {
+    border-bottom: 1px solid var(--color-golden);
+}
